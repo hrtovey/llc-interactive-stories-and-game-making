@@ -59,12 +59,12 @@
       </h1>
 
       <!-- FILL IN INSTRUCTOR DETAILS -->
-      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>
+      <img class="instructor" src="framework/img/slides/rissie-avatar.jpg" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Heather Tovey</h2>
       <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
+        <li><a href="mailto:heather@htovey.com">heather@htovey.com</a></li>
+        <li><a href="http://htovey.com">htovey.com</a></li>
+        <li><a href="http://twitter.com/hrtovey">@hrtovey</a></li>
       </ul>
 
       <div class="sponsor">
@@ -87,19 +87,21 @@
       <script type="text/template">
         # Agenda
 
-        <div class="table-of-contents"></div> 
+        <!-- <div class="table-of-contents"></div> -->
 
-        <!-- Intro + Example Projects + Guest Speaker (10am)
 
-        Project Ideation + Wireframing (10:15am)
+          <ul>
+            <li>[Why Game Making?](slides.html#slide5)</li>
+            <li>[Project Brainstorm](slides.html#slide13)</li>
+            <li>[Coding Environment](slides.html#slide16)</li>
+            <li>[Intro to HTML](slides.html#slide21)</li>
+            <li>[Intro to CSS](slides.html#slide50)</li>
+            <li>Lunch</li>
+            <li>[Game Jam Time!](slides.html#slide80)</li>
+            <li>[Going Live + Demos](slides.html#going-live)</li>
+          </ul>
 
-        Intro to HTML + CSS (10:45am)
 
-        Lunch (12:30pm)
-
-        Building time! (1:15pm)
-
-        Demos + Pushing Live (3:30pm) -->
 
       </script>
     </section>
@@ -110,22 +112,56 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <section class="slide gaming-intro pokemon" data-markdown>
       <script type="text/template">
-        # Impact of Digital Gaming
-        
-        This year, we are building upon our mission to teach 21st century skills through one of the most popular digital mediums: gaming.
+      <div class="text">
+        <h1>Impact of Digital Gaming</h1>
 
-        <ul>
-          <li class="delayed">Powerful way to make your message, cause or idea stand out in our crowded online world</li>
-          <li class="delayed">According to the [Entertainment Software Association of Canada](http://theesa.ca/wp-content/uploads/2015/11/ESAC_2015_Booklet_Version02_14_Digital.pdf), over 54% of Canadians are considered "gamers"</li>
-          <li class="delayed">Of those 54%, approximately half of them are women</li>
-          <li class="delayed">Yet, women only make up ***16% of the tech industry*** responsible for building games</li>
-        </ul>
+        <p>This year, we are building upon our mission to teach 21st century skills through one of the most popular digital mediums: gaming.</p>
 
+
+      </div>
       </script>
     </section>
-    
+
+        <section class="slide gaming-stat powerful" data-markdown>
+      <script type="text/template">
+      <div class="text">
+        <p>Powerful way to make your message, cause or idea stand out in our crowded online world</p>
+
+
+      </div>
+      </script>
+    </section>
+
+        <section class="slide gaming-intro gamers" data-markdown>
+      <script type="text/template">
+      <div class="text">
+        <h1>Over 54% of Canadians are considered "gamers"</h1>
+
+        <p>According to the [Entertainment Software Association of Canada](http://theesa.ca/wp-content/uploads/2015/11/ESAC_2015_Booklet_Version02_14_Digital.pdf)</p>
+
+
+      </div>
+      </script>
+    </section>
+        <section class="slide gaming-stat women" data-markdown>
+      <script type="text/template">
+      <div class="text">
+        <h1>***Approximately half*** of gamers are ***women***</h1>
+
+      </div>
+      </script>
+    </section>
+        <section class="slide gaming-stat women" data-markdown>
+      <script type="text/template">
+      <div class="text">
+        <h1>Women make up only ***16% of the game industry***</h1>
+
+
+      </div>
+      </script>
+    </section>
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -141,13 +177,13 @@
 
         <ol class="examples">
           <li>[Quiz](project/reference/game01-quiz/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span> </li>
-          
+
           <li>[Choose Your Own Adventure](project/reference/game02-textadventure/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></li>
-          
+
           <li>[Action Game](project/reference/game03-action/start.html) <span class="difficulty">Difficulty Level: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br>(Try this one after you've made either a quiz or story)</span></li>
         </ol>
 
-        ##Notice anything about the structure of these examples? 
+        ##Notice anything about the structure of these examples?
         <p class="delayed">They are a combo of single **one-page sites** linked together to form a larger narrative.</p><!-- .element: class="delayed" -->
 
       </script>
@@ -179,7 +215,7 @@
           <li class="delayed">What unique **pages** do you need?</li>
         </ul>
 
-        <p class="delayed">Consider the narrative and how users will explore your story, game or quiz. Refer back to <a href="slides.html#slide8">slide 8</a> for examples.
+        <p class="delayed">Consider the narrative and how users will explore your story, game or quiz. Refer back to <a href="slides.html#slide12">slide 12</a> for examples.
 
         ---
         ###Resources
@@ -300,6 +336,10 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #HTML Syntax
+
+        ```
+        <p>This is a paragraph.</p>
+        ```
 
         Tags are written with angled brackets `< >` and a forward slash `/` for the closing tag. Get to know these keys!
 
@@ -430,7 +470,7 @@
           |-- images
           |-- reference
         ```
-        
+
         The **project** folder is where each part of your story will live.
 
         The **images** folder contains a selection of images to use in your project (or add your own to this folder during the exercises).
@@ -1184,7 +1224,7 @@ selector { /* select the heading */
         height: ;</textarea>
         <div id="block">I'm a block element.</div>
       </script>
-    </section> 
+    </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1201,9 +1241,9 @@ selector { /* select the heading */
         margin: ;
         width: ;
         height: ;</textarea>
-        <span id="inline">I'm an inline element.</span> 
+        <span id="inline">I'm an inline element.</span>
       </script>
-    </section> 
+    </section>
 
     <section id="margin-padding" class="slide" data-markdown>
       <script type="text/template">
@@ -1275,11 +1315,11 @@ margin: 0px;</textarea>
     <section class="slide" data-markdown>
       <script type="text/template">
         #Being more specific - Using a Class
-        
-        Remember when we saw the `lang` and `charset` attributes? Well there's a really handy one we can use - the `class` attribute.  
-        
+
+        Remember when we saw the `lang` and `charset` attributes? Well there's a really handy one we can use - the `class` attribute.
+
         The value of the `class` is defined by you!  And it can be added to any tag to attach extra identifying information.
-        
+
         ```xml
         <img class="profile-img" src="images/profile.jpg" alt="Your Name">
         ```
@@ -1291,7 +1331,7 @@ margin: 0px;</textarea>
           /* any element with the class of 'profile-img' */
         }
         ```
-        
+
         Note that to use the `class` as a selector, it must start with a period, followed by class name with no spaces.
       </script>
     </section>
@@ -1477,8 +1517,8 @@ margin: 0px;</textarea>
 
         Looking through a completed project and modifying it until it's your own is a great way to learn advanced topics.
 
-        This project also contains two stylesheets - only modify the `styles-advanced.css` file if you are feeling very confident or have the help of a mentor. 
-        
+        This project also contains two stylesheets - only modify the `styles-advanced.css` file if you are feeling very confident or have the help of a mentor.
+
       </script>
     </section>
 
@@ -1491,7 +1531,7 @@ margin: 0px;</textarea>
           <header>
             <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
           </header>
-          
+
           <section>
 
             <input type="radio" id="target1"/><label for="target1"></label>
@@ -1511,7 +1551,7 @@ margin: 0px;</textarea>
           <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label`</li>
           <li class="delayed">The footer is empty (on purpose)</li>
         </ul>
-    
+
       </script>
     </section>
 
@@ -1575,7 +1615,7 @@ margin: 0px;</textarea>
 
         A **radio button** is used in forms for making multiple choice selections where the user can only choose one answer.
 
-        This is the opposite to **checkboxes** where you can choose multiple answers. 
+        This is the opposite to **checkboxes** where you can choose multiple answers.
 
         <img src="framework/img/input-types.png" alt="Radio vs Checkbox">
 
@@ -1599,7 +1639,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #PSEUDO CLASS :nth-of-type()
 
-        Another powerful pseudo-class is the `:nth-of-type()` selector. 
+        Another powerful pseudo-class is the `:nth-of-type()` selector.
 
         The `:nth-of-type()` selector targets elements based on their order in the HTML markup. Let's take a look inside our project's section tag:
 
@@ -1663,7 +1703,7 @@ margin: 0px;</textarea>
 
         ```
         input:checked + label {
-          transform: rotateX(70deg); 
+          transform: rotateX(70deg);
         }
         ```
         <p class="delayed">Whoa now - what does that `+` mean?</p>
@@ -1756,9 +1796,9 @@ margin: 0px;</textarea>
     </section>
 
 
-    <section id="next-steps" class="slide title" data-markdown data-toc>
+    <section id="going-live" class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Next steps
+        #Going Live
       </script>
     </section>
 
@@ -1776,8 +1816,21 @@ margin: 0px;</textarea>
       1. To create an *images* folder, right click in the left sidebar and click `New Folder` and name it "images". Upload your images there once the folder has been created.
       1. Once complete, click `Publish` and you will get a sharable link to your project that you can share on social media or with friends and family!
 
-      If you're sharing your projects on twitter today, be sure to use hashtag **#llcCodeDay**! We would love to see your creations!!!  
+      If you're sharing your projects on twitter today, be sure to use hashtag **#llcCodeDay**! We would love to see your creations!!!
 
+      </script>
+    </section>
+
+
+    <section id="demo-time" class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Demos!
+      </script>
+    </section>
+
+    <section id="next-steps" class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Next steps
       </script>
     </section>
 
@@ -1811,12 +1864,12 @@ margin: 0px;</textarea>
       <h1>Thank you!</h1>
       <h2 class="heading-bg"> </h2>
       Together we're changing the world, one game at a time.
-      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <img class="instructor" src="framework/img/slides/rissie-avatar.jpg" alt="instructor name">
+      <h2><span class="cursive">with</span> Heather Tovey</h2>
       <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="#">mywebsite.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
+        <li><a href="mailto:heather@htovey.com">heather@htovey.com</a></li>
+        <li><a href="http://htovey.com">htovey.com</a></li>
+        <li><a href="http://twitter.com/hrtovey">@hrtovey</a></li>
       </ul>
 
       <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
