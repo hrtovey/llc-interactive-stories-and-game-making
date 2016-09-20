@@ -257,7 +257,8 @@ a.highlight {
     display: block;
     height: 200px; }
   .slide img {
-    max-width: 100%; }
+    max-width: 100%;
+    display: block; }
   .slide.centered {
     text-align: center; }
     .slide.centered img {
